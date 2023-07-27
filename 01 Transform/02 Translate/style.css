@@ -1,0 +1,33 @@
+/**
+ *
+ * translate --> moves elements in vertical or horizontal directions
+ * transform: translate();  --> syntax
+ * - translate(tx, ty)
+ * - translate(tx) = translate(tx,0)
+ * - translateX(tx)
+ * - translateY(ty)
+ * tx -> the length of the translation to x axis = length or percentage values
+ * ty -> the length of the translation to y axis = length or percentage values
+ *  
+ */
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed black;
+    /* Translate Elements in X Axis */
+    /* transform: translate(50px, 0); */
+    /* transform: translateX(50px); */
+    /* Trannslate elements in Y Axis */
+    /* transform: translate(0,-100px); */
+    /* transform: translateY(-100px); */
+    /* Translate Elements in both axis */
+    transform: translate(50px, 50px);
+}

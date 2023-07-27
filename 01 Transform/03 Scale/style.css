@@ -1,0 +1,29 @@
+/**
+ *
+ * scale -> resize elements inn 2d space 
+ * transform: scale(); --> syntax
+ * - scale(sx, sy);
+ * - scale(sx);
+ * - scaleX(sx);
+ * - scaleY(sy);
+ * sx -> the amount of resize of the element in horizontal direction -- numbers(innt, zero, decimals)
+ * sy -> the amount of resize of the element in vertical direction -- numbers(innt, zero, decimals)
+ * -
+ */
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 100px auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed black;
+    /* transform: scale(2, 2); */
+    /* transform: scale(1.5); */
+    /* transform: scaleX(1.5); */
+    transform: scaleY(.5);
+}
