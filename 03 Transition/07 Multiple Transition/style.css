@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+.transition{
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    transition: transform 1.5s, width 1.5s, height 1.5s, background-color 1s, ease-in-out 1s;
+}
+
+.container:hover .transition{
+    transform: translateX(500px);
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+}

@@ -1,0 +1,20 @@
+
+
+
+.transition{
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+.container:hover .transition{
+    margin-left: 500px;
+}
+
+.delay{
+    transition-delay: 2s;
+}

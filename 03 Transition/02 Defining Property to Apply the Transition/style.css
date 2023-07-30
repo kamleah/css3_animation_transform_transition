@@ -1,0 +1,25 @@
+/** 
+ *
+ * default transition will apply to all transitionable property
+ * transition-property : name | all | property-name
+ * none -> no property will be transitioned
+ * all -> all transitionable properties will be transitioned
+ * property name -> the transitioned property name
+ *
+**/
+
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 0 auto;
+    /* transition-property: background-color width height; */
+    /* transition: all; */
+    transition-duration: 0.5s;
+}
+
+.transition:hover{
+    width: 300px;
+    height: 300px;
+    background-color: goldenrod;
+}
