@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+h1.first {
+    background-color: #0D75757D;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: 0;
+    background-color: #d2d2d2;
+    color: #000;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button.first {
+    overflow: hidden;
+}
+
+.button.first .btn-txt {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s;
+}
+
+.button.first:hover .btn-txt {
+    color: #fff;
+}
+
+.btn-bg {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: darkred;
+    border-radius: 50%;
+    transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+    transition: width 1s, height 1s;
+    z-index: 1;
+}
+
+.button.first:hover .btn-bg {
+    width: 750px;
+    height: 750px;
+}

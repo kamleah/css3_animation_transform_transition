@@ -1,0 +1,95 @@
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.first {
+    background-color: #0D75757D;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: 0;
+    background-color: #d2d2d2;
+    color: #000;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.button.left {
+    overflow: hidden;
+}
+
+.button.left::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.25s left;
+    z-index: 1;
+}
+
+.button.left:hover::before {
+    left: 0;
+}
+
+.button.left span {
+    z-index: 2;
+    position: relative;
+    transition: .25s ease-in;
+}
+
+.button.left:hover span {
+    color: white;
+
+}
+
+.button.right {
+    overflow: hidden;
+}
+
+.button.right::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    transition: 0.25s right;
+    z-index: 1;
+}
+
+.button.right:hover::before {
+    right: 0;
+}
+
+.button.right span {
+    z-index: 2;
+    position: relative;
+    transition: .25s ease-in;
+}
+
+.button.right:hover span {
+    color: white;
+
+}
