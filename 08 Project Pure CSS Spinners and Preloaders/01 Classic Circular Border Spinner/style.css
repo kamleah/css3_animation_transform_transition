@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

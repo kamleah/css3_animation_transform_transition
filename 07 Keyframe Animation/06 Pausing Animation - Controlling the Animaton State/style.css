@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: #2096cc;
+    transition: 0.5 background-color;
+    cursor: pointer;
+    animation: moveBox 5s infinite;
+}
+
+
+@keyframes moveBox {
+
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+        background-color: orangered;
+    }
+
+
+
+    100% {
+        margin-left: 0px;
+        margin-top: 400px;
+        background-color: purple;
+    }
+}
+
+.box:hover {
+    animation-play-state: paused;
+}

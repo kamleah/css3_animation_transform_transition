@@ -1,0 +1,110 @@
+/* 
+----- Syntax for key frames ----
+
+@keyframe name-of-animation{
+    0% {}
+    100% {}
+}
+
+------ OR -----
+
+@keyframe name-of-animation{
+    from% {}
+    to% {}
+}
+
+----- OR -----
+
+@keyframe name-of-animation{
+    0% {}
+    10% {}
+    20% {}
+    30% {}
+    40% {}
+    50% {}
+    60% {}
+    70% {}
+    80% {}
+    90% {}
+    100% {}
+}
+
+----- Keyframe Grouping Example -----
+
+@keyframe name-of-animation {
+    10%, 100% {}
+    25%, 75% {}
+    50% {}
+
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 30px;
+    background-color: #2096cc;
+    margin-top: 30px;
+    transition: 0.5 background-color;
+    cursor: pointer;
+    /* animation: move 1s infinite; */
+    animation: groupMove 1.5s infinite;
+}
+
+@keyframes move {
+    0% {
+        margin-top: 30px;
+    }
+
+    50% {
+        margin-top: 100px;
+        background-color: red;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
+}
+
+@keyframes groupMove {
+
+    0%,
+    100% {
+        margin-top: 30px;
+        background-color: red;
+    }
+
+    25%,
+    75% {
+        margin-top: 100px;
+        background-color: yellow;
+    }
+
+    50% {
+        margin-top: 150px;
+        background-color: orangered;
+    }
+}

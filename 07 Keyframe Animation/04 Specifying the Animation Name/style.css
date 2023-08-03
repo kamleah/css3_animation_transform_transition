@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: #2096cc;
+    transition: 0.5 background-color;
+    cursor: pointer;
+    animation: moveBox 5s infinite;
+    animation-direction: reverse;
+}
+
+/* 
+
+-- normal => start 0% --> 100%
+-- reverse => start 100% --> 0%
+-- alternate => start 0% --> 100% --> 0%
+-- alternate-reverse => start 100% --> 0% --> 100%
+
+*/
+
+.box2 {
+    width: 60px;
+    height: 60px;
+    background-color: #2096cc;
+    transition: 0.5 background-color;
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+
+/* 
+
+
+
+*/
+
+
+@keyframes moveBox {
+
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+        background-color: purple;
+        transform: rotate(0);
+    }
+
+    25% {
+        margin-left: 500px;
+        margin-top: 0px;
+        background-color: yellow;
+        transform: rotate(60deg);
+    }
+
+    50% {
+        margin-left: 500px;
+        margin-top: 400px;
+        background-color: orangered;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        margin-left: 0px;
+        margin-top: 400px;
+        background-color: orangered;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        margin-left: 0;
+        margin-top: 0;
+        background-color: purple;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
