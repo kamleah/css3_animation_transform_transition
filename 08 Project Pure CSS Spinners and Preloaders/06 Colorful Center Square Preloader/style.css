@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.wave {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.colourful {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin-top: 200px;
+}
+
+.square1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: #C8E4B2;
+    animation: animate1 2.5s infinite ease;
+}
+
+.square2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    background-color: #9ED2BE;
+    animation: animate2 2.5s infinite ease;
+}
+
+.square3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    background-color: #7EAA92;
+    animation: animate3 2.5s infinite ease;
+}
+
+.square4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    background-color: #FFD9B7;
+    animation: animate4 2.5s infinite ease;
+}
+
+@keyframes animate1 {
+
+    0%,
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(-40px) translateY(-40px);
+        border-radius: 50%;
+        background-color: #78C1F3;
+    }
+
+}
+
+@keyframes animate2 {
+
+    0%,
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(40px) translateY(-40px);
+        border-radius: 50%;
+        background-color: #9BE8D8;
+    }
+
+}
+
+@keyframes animate3 {
+
+    0%,
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(-40px) translateY(40px);
+        border-radius: 50%;
+        background-color: #E2F6CA;
+    }
+
+}
+
+@keyframes animate4 {
+
+    0%,
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(40px) translateY(40px);
+        border-radius: 50%;
+        background-color: #F8FDCF;
+    }
+
+}

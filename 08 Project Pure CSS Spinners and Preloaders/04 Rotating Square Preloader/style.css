@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rotating-squares {
+    position: relative;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.rotating-squares::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 4px solid white;
+    animation: clockwise_rotate 2s linear infinite;
+}
+
+.rotating-squares::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border: 4px solid white;
+    animation: anti_clockwise_rotate 2s linear infinite;
+
+}
+
+@keyframes clockwise_rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anti_clockwise_rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360);
+    }
+}

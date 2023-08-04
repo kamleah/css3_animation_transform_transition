@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+body {
+    background-color: #223e61;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.progress-bar-wrapper {
+    width: 500px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.progress-bar-fill {
+    height: 30px;
+    background-color: #3AA6B9;
+    border-radius: 2px;
+    animation: progress 5s ease;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 45%;
+    }
+
+    76% {
+        width: 54%;
+    }
+
+    88% {
+        width: 67%;
+    }
+
+    92% {
+        width: 74%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
